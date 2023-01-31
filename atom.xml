@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-12T09:28:36.518Z</updated>
+  <updated>2023-01-31T09:40:53.396Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Andriod抓包之证书导入</title>
+    <link href="http://example.com/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/"/>
+    <id>http://example.com/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/</id>
+    <published>2023-01-31T09:36:43.000Z</published>
+    <updated>2023-01-31T09:40:53.396Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Andriod抓包之证书导入"><a href="#Andriod抓包之证书导入" class="headerlink" title="Andriod抓包之证书导入"></a>Andriod抓包之证书导入</h1><h3 id="将Burp证书导入安卓系统CA"><a href="#将Burp证书导入安卓系统CA" class="headerlink" title="将Burp证书导入安卓系统CA"></a>将Burp证书导入安卓系统CA</h3><p>有些app必须安装在较高版本的安卓系统上面，但是在较高的系统上却无法抓包。从android Nougat开始，Android更改了对用户安装证书的默认信任行为。默认情况下app不会信任用户安装的CA，除非app有明确说明，否则应用程序将只会信任系统级别的CA。</p><p>由于安卓10采用了某些安全策略，将系统分区&#x2F;system挂载为只读，就算你root了也没用，无法写入系统分区也就无法导入系统证书，在使用http-canary、burp软件抓包分析的时候，很多app只认系统证书，不认用户证书。唯一的方法是魔改安卓10的rom，或者使用magisk的一些模块，如magisk的Move Certificates模块。</p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h3 id="0x01"><a href="#0x01" class="headerlink" title="0x01"></a>0x01</h3><p>下载Burp证书</p><p>导入证书，这时证书是安装到了用户区</p><p><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131171059714.png" alt="image-20230131171059714"></p><h3 id="0x02"><a href="#0x02" class="headerlink" title="0x02"></a>0x02</h3><p>在Magisk上安装Move Certificates模块，安装成功后用户分区的所有证书默认会导入到系统分区</p><p>Move Certificates下载地址：</p><p><a href="https://github.com/Magisk-Modules-Repo/movecert">https://github.com/Magisk-Modules-Repo/movecert</a></p><p>下载成zip之后直接用这个FoxMagiskModuleManager安装</p><p>FoxMagiskModuleManager下载地址：<a href="https://github.com/Fox2Code/FoxMagiskModuleManager/releases">https://github.com/Fox2Code/FoxMagiskModuleManager/releases</a></p><p>下载FoxMagiskModuleManager，安装到手机</p><p>完成基础设置后，点击从存储空间安装模块，安装Move Certificates</p><p><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131170717363.png" alt="image-20230131170717363"></p><p><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131170614151.png" alt="image-20230131170614151"><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131170451302.png" alt="image-20230131170451302"></p><p>安装完成后，会重启，重启之后就已经安装好了</p><p><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131165834154.png" alt="image-20230131165834154"></p><p>这时再看，证书已经移到系统区了<img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131170552711.png" alt="image-20230131170552711"></p><p>用BURP抓app(小米商城),成功</p><p><img src="/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5.assets/image-20230131164957325.png" alt="image-20230131164957325"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Andriod抓包之证书导入&quot;&gt;&lt;a href=&quot;#Andriod抓包之证书导入&quot; class=&quot;headerlink&quot; title=&quot;Andriod抓包之证书导入&quot;&gt;&lt;/a&gt;Andriod抓包之证书导入&lt;/h1&gt;&lt;h3 id=&quot;将Burp证书导入安卓系统CA&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="Andriod渗透" scheme="http://example.com/categories/Andriod%E6%B8%97%E9%80%8F/"/>
+    
+    
+    <category term="Andriod" scheme="http://example.com/tags/Andriod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker搭建Vulhub靶场</title>
+    <link href="http://example.com/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/"/>
+    <id>http://example.com/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/</id>
+    <published>2022-12-12T09:37:51.000Z</published>
+    <updated>2023-01-31T09:33:38.585Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>梦开始的地方</title>
