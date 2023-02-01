@@ -3,11 +3,11 @@
   <title>Z1bra@Blog</title>
   
   <subtitle>桃花流水窅然去，别有天地非人间</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://z1bracd.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://z1bracd.github.io/"/>
   <updated>2023-02-01T02:34:34.623Z</updated>
-  <id>http://example.com/</id>
+  <id>http://z1bracd.github.io/</id>
   
   <author>
     <name>z1bra</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Andriod抓包之证书导入</title>
-    <link href="http://example.com/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/"/>
-    <id>http://example.com/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/</id>
+    <link href="http://z1bracd.github.io/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/"/>
+    <id>http://z1bracd.github.io/2023/01/31/Andriod%E6%8A%93%E5%8C%85%E4%B9%8B%E8%AF%81%E4%B9%A6%E5%AF%BC%E5%85%A5/</id>
     <published>2023-01-31T09:36:43.000Z</published>
     <updated>2023-02-01T02:34:34.623Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="Andriod渗透" scheme="http://example.com/categories/Andriod%E6%B8%97%E9%80%8F/"/>
+    <category term="Andriod渗透" scheme="http://z1bracd.github.io/categories/Andriod%E6%B8%97%E9%80%8F/"/>
     
     
-    <category term="Andriod" scheme="http://example.com/tags/Andriod/"/>
+    <category term="Andriod" scheme="http://z1bracd.github.io/tags/Andriod/"/>
     
   </entry>
   
   <entry>
     <title>Docker搭建Vulhub靶场</title>
-    <link href="http://example.com/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/"/>
-    <id>http://example.com/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/</id>
+    <link href="http://z1bracd.github.io/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/"/>
+    <id>http://z1bracd.github.io/2022/12/12/Docker%E6%90%AD%E5%BB%BAVulhub%E9%9D%B6%E5%9C%BA/</id>
     <published>2022-12-12T09:37:51.000Z</published>
     <updated>2023-01-31T09:33:38.585Z</updated>
     
@@ -55,8 +55,8 @@
   
   <entry>
     <title>梦开始的地方</title>
-    <link href="http://example.com/2022/12/12/%E6%A2%A6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9C%B0%E6%96%B9/"/>
-    <id>http://example.com/2022/12/12/%E6%A2%A6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9C%B0%E6%96%B9/</id>
+    <link href="http://z1bracd.github.io/2022/12/12/%E6%A2%A6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9C%B0%E6%96%B9/"/>
+    <id>http://z1bracd.github.io/2022/12/12/%E6%A2%A6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%9C%B0%E6%96%B9/</id>
     <published>2022-12-12T09:24:33.000Z</published>
     <updated>2022-12-12T09:28:36.518Z</updated>
     
